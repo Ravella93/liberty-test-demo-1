@@ -22,20 +22,6 @@ import static org.junit.Assert.assertEquals;
 
 public class GetUsersTest {
 
-//    @Autowired
-//    private RestTemplate restTemplate;
-
-//    @TestConfiguration
-//    static class GetUserConfig() {
-//        @Bean
-//        public GetUsers getUsers() {
-//            return new GetUsers();
-//        }
-//    }
-
-
-
-//    @Autowired
     private GetUsers getUsers = new GetUsers();
 
     @Mock
@@ -61,7 +47,6 @@ public class GetUsersTest {
 
     @Test(expected = HttpClientErrorException.Forbidden.class)
     public void getUserFailure() {
-        System.out.println(getUsers.getUsersList(NO));
         getUsers.getUsersList(NO);
 
     }
