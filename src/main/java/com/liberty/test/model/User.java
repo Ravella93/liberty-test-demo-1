@@ -12,7 +12,7 @@ public class User {
 	private String page;
 	private String per_page;
 	private String total;
-	List<UserData> data;
-	Ad ad;
+	private List<UserData> data;
+	private Ad ad;
 
 }
