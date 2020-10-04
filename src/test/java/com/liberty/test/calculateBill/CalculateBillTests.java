@@ -17,6 +17,9 @@ public class CalculateBillTests {
 
 	public Customer customer;
 
+	/**
+	 * Making sure the paramters are reset before each test case
+	 */
 	@Before
 	public void setUp() {
 		customer = new Customer();
@@ -46,15 +49,21 @@ public class CalculateBillTests {
 
 	}
 
+	/**
+	 * Testing the size of Items mocked.
+	 */
 	@Test
-	public void itemListSize() {
+	public void itemListSizeTest() {
 		{
 			Assert.assertEquals(4, customer.getListOfItems().size());
 		}
 	}
 
+	/**
+	 * Testing the Item Price based on Names.
+	 */
 	@Test
-	public void itemListPricesBasedOnName() {
+	public void itemListPricesBasedOnNameTest() {
 		{
 			Assert.assertEquals(4, customer.getListOfItems().get(0).getPrice("Lays"));
 			Assert.assertEquals(6, customer.getListOfItems().get(1).getPrice("Coke"));
@@ -63,8 +72,11 @@ public class CalculateBillTests {
 		}
 	}
 
+	/**
+	 * Testing the total cost of Items that are purchased.
+	 */
 	@Test
-	public void calculateBill() {
+	public void calculateBillTest() {
 		{
 			Assert.assertEquals(18, customer.calculateBill());
 		}
