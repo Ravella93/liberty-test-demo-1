@@ -49,10 +49,10 @@ public class GetAndPostUserTests {
 	 */
 	@Test
 	public void postUser() throws Exception {
-		User user = getUsers.postUserInfo("Liberty", "Developer");
+		User user = getUsers.postUserInfo("darth vader", "villain");
 		assertEquals(HttpStatus.CREATED.value(), user.getStatusCode());
-		assertEquals("Liberty", user.getName());
-		assertEquals("Developer", user.getJob());
+		assertEquals("darth vader", user.getName());
+		assertEquals("villain", user.getJob());
 
 	}
 
