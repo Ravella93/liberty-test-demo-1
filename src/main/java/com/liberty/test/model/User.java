@@ -12,6 +12,7 @@ public class User {
 	private String page;
 	private String per_page;
 	private String total;
+	private int statusCode;
 	private List<UserData> data;
 	private Ad ad;
 
