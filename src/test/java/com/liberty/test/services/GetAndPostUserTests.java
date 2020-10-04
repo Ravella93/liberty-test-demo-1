@@ -9,7 +9,7 @@ import org.springframework.web.client.HttpClientErrorException;
 import com.liberty.test.model.User;
 import com.liberty.test.service.GetUsers;
 
-public class GetUsersTest {
+public class GetAndPostUserTests {
 
 	private GetUsers getUsers = new GetUsers();
 
